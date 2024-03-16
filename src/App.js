@@ -1,7 +1,21 @@
+import { Col, Row } from "reactstrap";
 import "./App.css";
+import Home from "./pages/Home";
+import SideBar from "./pages/SideBar";
 
-function App() {
-  return <div className="App">prateek dada</div>;
-}
+const App = () => {
+  return (
+    <div>
+      <Row>
+        <Col sm={3}>
+          <SideBar />
+        </Col>
+        <Col>
+          <Home />
+        </Col>
+      </Row>
+    </div>
+  );
+};
 
 export default App;
